@@ -3,6 +3,6 @@ class ApplicationController < ActionController::Base
 
   def current_user
     puts "------------------ code before every request ------------------"
-    # Optional: @current_user = ...
+    # Optional: @current_user = ..., shows the users name on every path
   end
 end

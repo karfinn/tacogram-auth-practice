@@ -11,13 +11,13 @@
 
 ### Step 1 - Users
 
-- Secure data in transit: Modify the new user form to obfuscate the password from view
-- Secure data at rest: When creating a new user, encrypt the user's password with bcrypt
+- DONE - Secure data in transit: Modify the new user form to obfuscate the password from view
+- DONE - Secure data at rest: When creating a new user, encrypt the user's password with bcrypt
 - __Challenge__: Do not `save` a new user if the user's email is already taken
 
 ### Step 2 - Sessions
 
-- Secure data in transit: Modify the new session form to obfuscate the password from view
+- DONE - Secure data in transit: Modify the new session form to obfuscate the password from view
 - In `app/controllers/sessions_controller.rb`, authenticate a user:
   - find user by email.
     - if no user is found: redirect to `/login` with a `flash` message
